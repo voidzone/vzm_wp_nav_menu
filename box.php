@@ -1,6 +1,6 @@
 <?php
 /*
-	Name: [VZM] Wordpress Nav Menu
+	Name: VZM Wordpress Nav Menu
 	Author: Tim Milligan
 	Description: Adds Support for Wordpress Nav Menus with Theme Locations 
 	Version: 1.2
