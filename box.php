@@ -29,9 +29,12 @@ class vzm_wp_nav_menu extends thesis_box {
 		);
 	}
 
-	public function html($depth) {
+	public function html($args = false) {
+		extract($args = is_array($args) ? $args : array());
+		$tab = str_repeat("\t", !empty($depth) ? $depth : 0);
+		
 		if (has_nav_menu($this->_id)) {
-			echo str_repeat("\t", $depth) . wp_nav_menu(array('theme_location' => $this->_id));
+			echo $tab . wp_nav_menu(array('theme_location' => $this->_id));
 		}
 	}
 }
